@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="shortcut icon" href="TextIt Search Bar Icon.png">
+    <link rel="apple-touch-icon-precomposed" href="TextIt Shortcut Icon.png">
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script defer src="SignUp.js"></script>
+    <title>Text It - Sign Up</title>
+</head>
+<body>
+    <div id="hole-Page">
+        <img src="Map Image.PNG" id="map-Image">
+        <div id="hole-Background">
+            <div id="sign-Up-Container">
+                <img src="Text It2.png" id="text-It-Logo">
+                <form id="sign-Up-Form" onsubmit="return signUp();">
+                    <div id="password-Container">
+                        <button type="button" id="see-Password" onclick="seePassword();"><img src="hide password icon.png" id="password-Icon"></button>
+                    </div>
+                    <input type="text" id="username-Textbox" placeholder="Username">
+                    <input type="text" id="full-Name-Textbox" placeholder="Full Name">
+                    <input type="password" id="password-Textbox" placeholder="Password">
+                    <button type="submit" id="Sign-Up-Button">Sign Up</button>
+                </form>
+                <div id="error">Please Fill Out Required Fileds</div>
+                <div id="error1">User Already Exists</div>
+                <!-- <div id="error2">Username </div> -->
+                <div id="already-Have-Account">Already Have An Account ?</div>
+            </div>
+        </div>
+    </div>
+    <div id="Icons">
+        <a target="_blank" href="https://icons8.com/icon/85137/hide">Hide</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a target="_blank" href="https://icons8.com/icon/85329/eye">Eye</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
+</body>
+</html>
